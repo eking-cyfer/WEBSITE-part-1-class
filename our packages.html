@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our packages</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .topnav a {
+        float: left;
+        color: red;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: blueviolet;
+        color: orange;
+    }
+
+    .topnav a.active {
+        background-color: yellowgreen;
+        color: yellow;
+    }
+    h1 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4a90e2;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            max-width: 900px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .myslides {
+            display: none;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Navigation Buttons */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .carousel-button {
+                font-size: 1.5rem;
+                padding: 8px 16px;
+            }
+        }
+</style>
+</head>
+
+   <body>
+        <!-- Navigation Bar -->
+        <div class="topnav">
+            <a class="active" href="homepage.html">Homepage</a>
+            <a href="filling your travel form.html">Filling Your Travel Form</a>
+            <a href="contacting-us.html">Contact Us</a>
+            <a href="advertisement.html">Advertisement</a>
+            <a href="our-packages.html">Our Packages</a>
+        </div>
+    
+        <!-- Heading -->
+        <h1>Our Tour Sites Include</h1>
+    
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <img class="myslides" src="pic1.jpg" alt="Beautiful Destination 1">
+            <img class="myslides" src="pic2.jpg" alt="Beautiful Destination 2">
+            <img class="myslides" src="pic3.jpg" alt="Beautiful Destination 3">
+            <img class="myslides" src="2222.jpg" alt="Beautiful Destination 4">
+            <img class="myslides" src="1.jpg" alt="Beautiful Destination 5">
+    
+            <!-- Navigation Buttons -->
+            <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+<script src="script.js"></script>
+</body>
+
+
+
+</html>
